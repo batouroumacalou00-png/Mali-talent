@@ -1,0 +1,13 @@
+{
+  "name": "mali-talent",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix packages/server run dev\" \"npm --prefix packages/client run dev\"",
+    "build": "npm --prefix packages/server run build && npm --prefix packages/client run build",
+    "start": "npm --prefix packages/server run start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
